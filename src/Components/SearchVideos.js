@@ -22,7 +22,7 @@ const SearchVideos = ({addVideo,addSelectedVideo}) =>{
                 part: "snippet",
                 maxResults: 5,
                 type: "video",
-                key: "AIzaSyAUBLwIKuEGkmESheAkPvz5uslx8095eQA"
+                key: process.env.REACT_APP_YOUTUBE_KEY
             }
         })
         .then(res=>{
